@@ -1,0 +1,66 @@
+button {
+    box-shadow: none !important;
+    background-color: #343a4000 !important;
+    border: 1px solid #ffffff !important;
+}
+
+.accordion-button::after {
+    position: relative;
+    bottom: 2vh;
+    content: "+";
+    font-size: 40px;
+    background-image: none;
+    font-weight: 100;
+    color: #ffffff;
+    transform: translateY(-4px);
+}
+
+.accordion-button:not(.collapsed)::after {
+
+    background-image: none;
+    content: "";
+    font-size: 48px;
+    transform: translate(-5px, -4px);
+    transform: rotate(0deg);
+}
+
+.accordion-button:hover {
+    background-color: #af0f17 !important;
+}
+
+.box {
+    border-top: 1px solid #af0f17;
+    border-right: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
+    border-left: 1px solid #af0f17;
+}
+
+.box1 {
+    border-right: 1px solid #ffffff;
+}
+
+.dropdown-menu {
+    background-color: rgb(3, 3, 3) !important;
+    color: #ffffff !important;
+}
+
+.licolor {
+    background-color: #0000 !important;
+    color: #ffffff !important;
+}
+
+.licolor:hover {
+    background-color: #af0f17 !important;
+    color: #ffffff !important;
+}
+
+.form-check-input {
+    border: none !important;
+    box-shadow: none !important;
+}
+
+
+.form-check-input:active,
+.form-check-input:checked {
+    background-color: #af0f17 !important;
+}

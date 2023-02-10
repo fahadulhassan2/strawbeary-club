@@ -1,0 +1,110 @@
+.text {
+  transition: font-weight 0.4s ease-in-out;
+}
+.text:hover {
+  font-weight: 900;
+
+}
+.text1 {
+
+  transition: font-weight 0.8s ease-in-out;
+  animation: textbold 0.9s linear 1s infinite alternate;
+}
+
+@keyframes textbold {   
+    60% {
+       font-weight: 900; 
+      }
+}
+
+.light {
+  font-weight: bold;
+  transition: font-weight 0.4s ease-in-out;
+}
+.light:hover {
+  font-weight: light;
+  
+}
+#carton-img{
+  transition: all 0.2s ease-in-out 0.1s;
+}
+#carton-img:hover {
+transform: translate(-6px, -5px);
+}
+.eldon{
+font-size: 20em !important; 
+background: linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.1)), url('./graphics/landing-ng-63.png') fixed;
+background-position: center;
+background-size: cover;
+-webkit-text-fill-color:transparent;
+-webkit-background-clip:text;
+transition: all 0.2s ease-in-out 0.1s;
+
+
+}
+.eldon:hover{
+transform: translate(-6px, -5px);
+
+}
+.bg-img{
+background: url('graphics/eldon-white-land-1.jpg') no-repeat;
+background-position:  center;
+background-size: cover;
+
+}
+.carousel-item1{
+background:  url('./graphics/landing-ng-1.webp') no-repeat;
+  background-position: 100; 
+  background-size: cover; 
+  width: 100% ;
+  height: 70vh;
+  animation: example 5s linear 1s infinite alternate;
+}
+
+@keyframes example {
+
+70% {background-position: right center;}
+}
+svg:hover {
+border: 2px solid #000;
+}
+.btn{
+box-shadow: none !important;
+border: none !important;
+background-color: #000000 !important;
+transition: all 0.9s ease-in-out 0.5s;
+}
+
+.btn:hover, .btn:active, .btn:focus{
+border: 5px solid #6c757dd1 !important;
+}
+@media (max-width: 576px) {
+h1{
+  font-size: 6em !important;
+}
+.heading {
+  font-size: 3em !important;
+}
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  width: 2rem;
+  height: 2rem;
+  outline: black;
+}
+p{
+  font-size: 0.9em !important;
+}
+}
+@media (min-width: 576px) and (max-width: 768px) {
+h1{
+  font-size: 10em !important;
+}
+.heading {
+  font-size: 10em !important;
+}
+}
+@media (min-width: 768px) and (max-width: 992px) {
+
+.eldon{
+font-size: 10rem !important;
+}
+}
